@@ -1,6 +1,6 @@
 # 💫 About Me:
-北邮电子信息<br>AI infra学习者<br>开源社区初学
-Electronic Information Engineering @ BUPT | AI Infrastructure Learner | Open Source Beginner
+北邮电子信息<br>AI infra学习者<br>开源社区初学<br>
+Electronic Information Engineering @ BUPT <br> AI Infrastructure Learner <br> Open Source Beginner
 
 # 💻 Tech Stack:
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Alibaba Cloud](https://img.shields.io/badge/AlibabaCloud-%23FF6701.svg?style=for-the-badge&logo=alibabacloud&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
