@@ -206,5 +206,3 @@ I enjoy building things, understanding what lies beneath abstractions, and conti
   深入学习，持续构建，保持好奇。
 </p>
 ```
-
-这一版更合理。**GitHub 主页展示的东西最好默认都能公开验证**；private 项目即使真实，也不如不写。等你有 1–3 个真正拿得出手的 public repo，再加一个 `Projects / 项目` 区块会更有分量。
