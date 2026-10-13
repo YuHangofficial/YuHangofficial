@@ -63,27 +63,19 @@ This project strengthened my interest in the intersection of **machine learning 
 
 这个项目让我第一次比较完整地经历了从模型训练、硬件部署到实际性能测量与优化的过程。
 
-### 2. PhyAI — Physical AI Inference Infrastructure
+### PhyAI — Learning Through Open Source
 
-**[Upstream Project →](https://github.com/mingti-org/phyai)** | **[My Development Fork →](https://github.com/YuHangofficial/phyai)**
+**[Project →](https://github.com/mingti-org/phyai)**
 
-I'm participating in development and learning around **PhyAI**, an open-source inference engine designed for latency-sensitive Physical AI workloads, including Vision-Language-Action (VLA) models.
+I'm currently getting involved with PhyAI, an open-source project focused on Physical AI inference.
 
-My current work and learning focus on:
+As a newcomer to the project, I'm learning how inference engines are structured and gaining experience with code integration, debugging, and API compatibility.
 
-- Inference runtime architecture / 推理运行时架构
-- Model integration and API compatibility / 模型集成与 API 兼容性
-- Debugging and performance profiling / 调试与性能分析
-- GPU execution and kernel-level optimization / GPU 执行与 Kernel 优化
+I'm still early in this journey, with a lot to learn.
 
-I'm particularly interested in how inference systems balance **latency, throughput, and hardware constraints**.
+我最近开始参与 PhyAI 开源项目，目前主要在熟悉推理引擎的代码结构，接触模型集成、版本兼容与调试工作。
 
-我目前正在通过实际项目接触 Physical AI 推理系统，学习模型适配、运行时机制、性能分析与底层优化。
-
-*PhyAI is a collaborative open-source project. The linked fork is my development copy, not an independently authored inference engine.*
-
-*PhyAI 是团队开源项目，个人 Fork 用于开发与学习，并非独立开发的完整推理引擎。*
-
+我还处于学习和积累经验的阶段，希望逐步建立真正的系统工程能力。
 ---
 
 ## 🛠️ Current Experiments / 正在探索
