@@ -1,207 +1,189 @@
-<h1 align="center">Hi, I'm Yuhang Lu 👋</h1>
+# Hi, I'm Yuhang Lu 👋
 
-<p align="center">
-  <b>Electronic Information @ BUPT · AI Infrastructure · GPU Systems</b>
-</p>
+**Electronic Information @ BUPT | AI Infrastructure · GPU Systems · AI Agents**
 
-<p align="center">
-  北京邮电大学电子信息本科生 · AI Infra · GPU / CUDA · Systems
-</p>
+北京邮电大学电子信息本科生，关注 AI 基础设施、GPU 系统与 AI Agent。
 
-<p align="center">
-  Exploring how AI models become fast, efficient, and usable systems.<br>
-  探索 AI 模型如何真正高效地运行在计算系统与硬件之上。
-</p>
+*Interested in how intelligent systems actually work — from algorithms and runtimes to hardware, and from prototypes to reliable real-world applications.*
+
+我希望理解智能系统如何真正运作：从算法、运行时到底层硬件，也从实验原型走向可靠的实际应用。
 
 ---
 
-## About Me / 关于我
+## 👨‍💻 About Me / 关于我
 
-I'm an undergraduate student at **Beijing University of Posts and Telecommunications (BUPT)**, studying Electronic Information.
+I'm an undergraduate student at **Beijing University of Posts and Telecommunications (BUPT)**, China.
 
-我是 **北京邮电大学（BUPT）电子信息类本科生**。
+My interests lie at the intersection of **AI infrastructure, systems engineering, and intelligent automation**.
 
-I'm currently moving deeper into the systems side of AI — from models and operators down to kernels, runtimes, and hardware execution.
+I enjoy building things, investigating how they work under the hood, and learning through real engineering problems.
 
-目前我正在深入 AI 的系统侧：从模型、算子，到 Kernel、Runtime，再到底层硬件执行。
+我目前就读于北京邮电大学电子信息专业。
 
-My main interests include:
+相比单纯调用模型，我更感兴趣的是模型背后的计算系统，以及如何让 AI 真正可靠、高效地运行。
 
-主要关注方向：
+目前主要探索三个方向：
 
-- **AI Infrastructure / AI 基础设施**
-- **GPU Computing & CUDA / GPU 计算与 CUDA**
-- **Kernel Optimization / Kernel 优化**
-- **ML Systems & Inference / AI 系统与推理**
-- **AI Agents / AI 智能体**
-- **Computer Systems / 计算机系统**
-
-I enjoy understanding systems across abstraction layers.
-
-我希望不仅会“使用”AI，也能够理解它在不同抽象层之间究竟是如何运行的：
-
-```text
-Model / 模型
-      ↓
-Operator / 算子
-      ↓
-Kernel
-      ↓
-Runtime / 运行时
-      ↓
-GPU / Hardware
-GPU / 硬件
-```
-
-> I want to understand not only what AI can do, but how it actually runs.
-
-> 我不仅想知道 AI 能做什么，也想知道它究竟是怎样跑起来的。
+- **AI Infrastructure & GPU Computing** — CUDA、GPU 性能分析、推理系统与 Kernel 优化
+- **AI Agents & Reliability** — Agent 自动化、执行可靠性、任务验证与工作流设计
+- **Embedded & Physical AI** — 嵌入式推理、边缘计算与机器人 AI 系统
 
 ---
 
-## What I'm Working On / 最近在做什么
+## 🚀 Featured Projects / 代表项目
 
-### ⚡ GPU & Kernel Optimization  
-### GPU 与 Kernel 优化
+### 1. STM32 TinyML — Neural Network Inference on a Microcontroller
 
-Learning and experimenting with:
+**[View Project →](https://github.com/YuHangofficial/stm32f103-tinyml)**
 
-正在学习和实践：
+Built a small neural network inference pipeline running directly on an **STM32F103C8T6 (ARM Cortex-M3)**, without an operating system.
 
-- CUDA Programming / CUDA 编程
-- GPU Execution Model / GPU 执行模型
-- Memory Hierarchy / GPU 存储层次
-- Warp / Block / Grid
-- Nsight Systems & Nsight Compute
-- Memory-bound vs. Compute-bound Analysis
-- Roofline Analysis / Roofline 性能模型
-- Kernel Performance Optimization / Kernel 性能优化
+The project covers model training, integer-based inference, bare-metal firmware, serial communication, and performance optimization.
 
-I'm currently gaining hands-on experience through GPU workloads, profiling, and kernel-level optimization.
+**Measured results:**
 
-目前正在通过真实 GPU workload、性能 Profiling 和 Kernel 优化实践建立对 GPU 性能工程的理解。
+| Metric | Result |
+|---|---|
+| Classification accuracy / 分类准确率 | 94.17% (339/360) |
+| Inference latency / 推理延迟 | 2.03 ms |
+| CPU frequency / 运行频率 | 8 MHz |
+| Firmware size / 固件大小 | 5,664 bytes |
+| Inference speedup / 推理加速 | ~5.4× |
 
----
+*Results measured in the project's test environment.*
 
-### 🧠 AI Systems  
-### AI 系统
+**What I learned / 实践收获：**
 
-I'm exploring the infrastructure behind modern AI models, including:
+- Deploying neural networks on resource-constrained hardware / 在资源受限的硬件上部署神经网络
+- Integer-based inference and model parameter conversion / 整数推理与模型参数转换
+- Bare-metal C programming and embedded communication / 裸机 C 编程与嵌入式通信
+- Measuring latency and optimizing memory usage / 测量推理延迟并优化存储开销
 
-目前正在关注现代 AI 模型背后的系统基础设施，包括：
+This project strengthened my interest in the intersection of **machine learning and low-level systems**.
 
-- Model Inference / 模型推理
-- Runtime Systems / Runtime 系统
-- Operator Implementation / 算子实现
-- VLA & Multimodal Models / VLA 与多模态模型
-- Kernel Design Agents
-- Performance Profiling & Optimization / 性能分析与优化
+这个项目让我第一次比较完整地经历了从模型训练、硬件部署到实际性能测量与优化的过程。
 
-My goal is to connect:
+### 2. PhyAI — Physical AI Inference Infrastructure
 
-我希望逐渐建立从模型到底层硬件的完整理解：
+**[Upstream Project →](https://github.com/mingti-org/phyai)** | **[My Development Fork →](https://github.com/YuHangofficial/phyai)**
 
-```text
-AI Models
-    ↕
-Systems Software
-    ↕
-GPU / Hardware
-```
+I'm participating in development and learning around **PhyAI**, an open-source inference engine designed for latency-sensitive Physical AI workloads, including Vision-Language-Action (VLA) models.
 
----
+My current work and learning focus on:
 
-### 🤖 Agents & Personal AI  
-### AI Agent 与个人 AI
+- Inference runtime architecture / 推理运行时架构
+- Model integration and API compatibility / 模型集成与 API 兼容性
+- Debugging and performance profiling / 调试与性能分析
+- GPU execution and kernel-level optimization / GPU 执行与 Kernel 优化
 
-I'm also interested in AI agents and AI-native workflows.
+I'm particularly interested in how inference systems balance **latency, throughput, and hardware constraints**.
 
-我同样关注 AI Agent，以及 AI 如何真正进入日常学习、知识管理和个人工作流。
+我目前正在通过实际项目接触 Physical AI 推理系统，学习模型适配、运行时机制、性能分析与底层优化。
 
-Some of my experiments focus on using agents to automate:
+*PhyAI is a collaborative open-source project. The linked fork is my development copy, not an independently authored inference engine.*
 
-一些实践方向包括：
-
-- Information processing / 信息处理
-- Knowledge management / 知识管理
-- Reading workflows / 阅读工作流
-- Personal automation / 个人自动化
-- AI-assisted development / AI 辅助开发
+*PhyAI 是团队开源项目，个人 Fork 用于开发与学习，并非独立开发的完整推理引擎。*
 
 ---
 
-## Tech Stack / 技术栈
+## 🛠️ Current Experiments / 正在探索
 
-### Languages / 编程语言
+### 🤖 Reliable AI Agents & Automation
 
-`C++` · `Python` · `CUDA` · `C`
+I'm experimenting with local AI agent workflows, focusing on a question:
 
-### Systems / 系统工具
+**How can we make autonomous agents reliable, verifiable, and safe to operate?**
 
-`Linux` · `WSL2` · `Git` · `CMake` · `Slurm`
+我正在探索一个问题：
 
-### GPU & Performance / GPU 与性能分析
+**如何让 AI Agent 不仅能够完成任务，还能够证明任务确实完成，并在无人值守时可靠运行？**
 
-`CUDA` · `Nsight Systems` · `Nsight Compute` · `NVTX`
+Two personal experiments:
 
-### AI
+**NightOps — Local Agent Automation**
 
-`PyTorch` · `LLM` · `AI Agents` · `Model Inference`
+An experimental local automation system exploring:
 
----
+- Scheduled and unattended task execution / 定时与无人值守任务执行
+- Task dependencies and lifecycle management / 任务依赖与生命周期管理
+- Failure recovery and safety boundaries / 故障恢复与安全边界
+- Testing and execution reports / 自动化测试与执行报告
 
-## Currently Learning / 正在学习
+**Personal Context — Context Infrastructure for AI Agents**
 
-```text
-CUDA & GPU Architecture
-CUDA 与 GPU 架构
-        │
-        ├── Memory Hierarchy / 存储层次
-        ├── Kernel Optimization / Kernel 优化
-        ├── Profiling / 性能分析
-        └── Performance Modeling / 性能建模
+An experimental system exploring:
 
+- Structured context exchange / 结构化上下文交换
+- Cross-agent interoperability / 不同 Agent 之间的互操作
+- Context validation and provenance / 上下文验证与来源追踪
+- Controlled information persistence / 可控的信息持久化
 
-AI Systems
-AI 系统
-        │
-        ├── Inference / 推理
-        ├── Runtime
-        ├── Operators / 算子
-        └── Kernel Design
+*Both are personal experiments and are not yet publicly released. Public technical notes or demos may be added as the projects mature.*
 
-
-Computer Systems
-计算机系统
-        │
-        ├── Linux
-        ├── Networking / 计算机网络
-        └── Distributed & HPC Systems
-            分布式与高性能计算
-```
+*以上均为个人实验项目，尚未公开发布。后续会根据项目进展整理可公开的技术文档与演示。*
 
 ---
 
-## Beyond Code / 技术之外
+## 🔧 Tools & Technologies / 技术与工具
 
-I'm interested in technology not only as a tool, but also as a force that changes how people learn, work, and understand the world.
+**Programming / 编程**
 
-我对技术的兴趣并不仅限于代码本身。
+`Python` · `C` · `C++` · `CUDA (Learning)`
 
-我也很关注技术如何改变人的学习方式、工作方式，以及我们理解世界的方式。
+**Systems & Development / 系统与开发**
 
-I enjoy building things, understanding what lies beneath abstractions, and continuously expanding the boundary of what I can understand.
+`Linux` · `Windows` · `WSL2` · `Git` · `CMake`
 
-我喜欢亲手做东西，也喜欢追问抽象背后的机制。
+**AI & Infrastructure / AI 基础设施**
 
-比起单纯掌握更多工具，我更希望不断拓展自己能够理解问题的边界。
+`PyTorch` · `Model Inference` · `AI Agents` · `GPU Profiling`
+
+**Currently Learning / 持续学习**
+
+`CUDA Kernels` · `Nsight Systems` · `Nsight Compute` · `Distributed Systems` · `ML Systems`
+
+I treat these as areas of ongoing practice, not a claim of expertise in every technology listed.
+
+这些是我正在实践和学习的技术方向，并不意味着已经精通其中的每一项。
 
 ---
 
-<p align="center">
-  <i>Learn deeply. Build things. Stay curious.</i>
-</p>
+## 🌍 Open to Connections / 欢迎交流
 
-<p align="center">
-  深入学习，持续构建，保持好奇。
-</p>
+I believe some of the best learning happens through conversations, open-source contributions, and building things with people from different backgrounds.
+
+I'm always happy to connect with developers, researchers, students, and independent builders around the world.
+
+Especially if you're working on:
+
+- AI infrastructure and inference systems
+- Reliable AI agents and developer tools
+- GPU computing and performance engineering
+- Robotics and Physical AI
+- Interesting open-source projects
+
+Whether it's discussing a technical problem, exchanging ideas, or collaborating on a small experiment, feel free to reach out.
+
+我希望认识来自世界各地的开发者、研究者、学生和独立创造者。
+
+无论是交流技术问题、分享项目经验，还是共同探索一个有意思的想法，都非常欢迎联系。
+
+**GitHub:** [@YuHangofficial](https://github.com/YuHangofficial)
+
+---
+
+## 💭 Beyond Code / 技术之外
+
+I'm curious about how technology changes not only what we can build, but also how people learn, work, collaborate, and understand the world.
+
+I value curiosity, independent thinking, and the freedom to explore new ideas.
+
+除了技术本身，我也关心技术如何改变社会，以及不同文化、不同背景的人如何理解和创造这个世界。
+
+我希望保持独立思考，持续学习，也始终对更广阔的世界保持开放。
+
+---
+
+*Learn deeply. Build things. Stay curious.*
+
+**深入学习，持续构建，保持好奇。**
