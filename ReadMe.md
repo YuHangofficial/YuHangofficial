@@ -1,4 +1,4 @@
-# I'm Yuhang Lu 👋
+# I'm Yuhang 👋
 **Electronic Information @ BUPT | AI Infrastructure · GPU Systems · AI Agents**
 
 北京邮电大学电子信息本科生，关注 AI 基础设施、GPU 系统与 AI Agent。
